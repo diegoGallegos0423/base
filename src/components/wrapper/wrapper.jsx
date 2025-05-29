@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Navbar, RigthMenu, LeftMenu } from "../navbar/";
+import { Navbar, RigthMenu, LeftMenu } from "../navbar";
 import Home from "../../pages/home/home";
 import './wrapper.css'
 
