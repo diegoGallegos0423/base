@@ -1,14 +1,14 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
-import Wrapper from "./components/wrapper/wrapper";
-import Router from './config/router'; // Cambia el nombre aquí
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import Navbar from "./components/navbar/navbar";
+import AppRouter from "./config/router";
 
 function App() {
   return (
-    <>
-      <Wrapper />
-      <AppRouter /> {Router}
-    </>
+    <BrowserRouter>
+      <Navbar />
+      <AppRouter />
+    </BrowserRouter>
   );
 }
 
