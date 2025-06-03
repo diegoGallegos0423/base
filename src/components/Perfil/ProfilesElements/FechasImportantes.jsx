@@ -3,7 +3,6 @@ import { Calendar } from 'lucide-react';
 
 const FechasImportantesCard = ({
   titulo = "FECHAS IMPORTANTES",
-  subtitulo = "EMS",
   iconColor = "text-primary",
   eventos = []
 }) => (
@@ -11,7 +10,7 @@ const FechasImportantesCard = ({
     <div className="card-body text-center">
       <Calendar size={48} className={`mb-3 ${iconColor}`} />
       <div className="fw-bold mb-2">{titulo}</div>
-      <div className="bg-primary text-white rounded-3 py-2 px-3 mb-2" style={{ fontWeight: 600, fontSize: 18 }}>{subtitulo}</div>
+     
       {eventos.length > 0 && (
         <ul className="list-unstyled small mb-0">
           {eventos.map((evento, idx) => (
