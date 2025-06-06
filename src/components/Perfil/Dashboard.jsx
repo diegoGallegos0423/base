@@ -13,26 +13,11 @@ const Dashboard = () => {
   return (
     <>
       <Navbar />
-      {/* Fondo estático: mitad arriba #6a003a, mitad abajo blanco */}
-      <div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100vw",
-          height: "145vh",
-          zIndex: -1,
-          background: "linear-gradient(to bottom, #6a003a 0 50%, #fff 50% 100%)"
-        }}
-      />
       <div className="row mb-4" style={{ position: "relative", zIndex: 1 }}>
         {/* Sidebar */}
+
         <div className="col-md-2 mb-4">
-          <ProfileSidebar
-            nombre="Gerardo Miranda Ortiz"
-            rol="MAESTRO"
-            nivel="EDUCACIÓN MEDIA SUPERIOR"
-          />
+          <ProfileSidebar/>
         </div>
        
         <div className="col-md-10 mb-4">
